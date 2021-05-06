@@ -1,0 +1,60 @@
+//change app bar color in scroll
+.c-bar .v-app-bar {
+  background: #050505 !important;
+  transition: 0.1s;
+}
+
+//for background css
+.background {
+  position: fixed;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff !important;
+}
+
+// card height for movie and tvshow
+.title-card{
+  height: 400px;
+}
+// card height for recommendation
+.title-card-2{
+  height: 320px;
+}
+
+// card movie overview height for movie and tvshow
+.mx-card {
+  max-height: 270px;
+  overflow-y: auto;
+}
+// card movie overview height for recommendation
+.mx-card-2 {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+//remove scroller width
+.custom-scroll {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

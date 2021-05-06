@@ -7,7 +7,7 @@ const namespaced = true;
 // State management for all the different fields
 const state = 
 {
-  id: null,
+  id: '',
   name: null,
   email: null,
   partnerId: null,
@@ -26,6 +26,14 @@ const mutations =
       state.partnerId = payload.partnerId;
       state.movieApiPage = payload.movieApiPage;
     },
+     Clear_Data: (state) =>
+    {
+      state.id = '';
+      state.name = '';
+      state.email = '';
+      state.partnerId = '';
+      state.movieApiPage = '';
+    },
     Partner_Data: (state, payload) => 
     {
       state.partnerId = payload;
@@ -42,6 +50,10 @@ const actions =
     setuData(context, uData) 
     {
         context.commit('User_Data', uData);
+    },
+    clearuData(context)
+    {
+        context.commit('Clear_Data');
     },
     setPartnerId(context, id)
     {

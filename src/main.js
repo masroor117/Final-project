@@ -4,7 +4,8 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 import firebase from 'firebase'
-
+// css for whole app
+import './assets/scss/app.scss'
 Vue.config.productionTip = false
 
 // Firebase web app configuration 

@@ -6,6 +6,16 @@ import store from "../store/index";
 Vue.use(VueRouter)
 
 const routes = [
+    {
+    path: '/',
+    redirect:'/home',
+  },
+    {
+    path: '/home',
+    name: 'home',
+     component: () => import(/* webpackChunkName: "Login" */ '../views/index.vue'),
+    // Added to any route to have the guard function called for authentication access only.
+  },
   {
     path: '/Movies',
     name: 'Movies',
@@ -15,7 +25,7 @@ const routes = [
   },
   {
     // Sets it as route path so automatic direction to login first.
-    path: '/',
+    path: '/login',
     name: 'Login',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -73,7 +83,7 @@ function guard(to, from, next) {
     next();
     //Sends unauthenticated users to the log in page first.
   } else {
-    next("/");
+    next("/login");
   }
 }
 
