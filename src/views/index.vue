@@ -26,11 +26,12 @@
                 <div class="ma-auto">
                     <div class="text-md-h3 text-h4 text-center">Who are we?</div>
                     <div class="text-center my-7">
-                        Our simple mission is to help people relax and enjoy when it comes to the place, they should be doing to 
-                        do so. As time goes by and the amount of on demand entertainment increases it is only natural that deciding 
-                        on one becomes harder specially with others. That is where we come in and help people find what they
-                        like in their own times so when the time comes to relax and unwind together there is no time wasted picking and
-                        deciding between each other instead only entertainment waiting for you to enjoy.
+                        Our simple mission is to help people achieve an effortless and relaxing entertainment experience together with whomever they choose. 
+                        As time goes by and the amount of on demand entertainment increases every month it is only natural that the decision process
+                        becomes more time consuming with it. That is where we come in and help users find what they
+                        like in their own time so when they want to relax and unwind together the moment is not wasted in the
+                        decision process between one anothers prefrences. Instead of struggles, there is only the wide range of options for all to enjoy
+                        at your disposal waiting in our 'Recommendation' page.
                     </div>
                 </div>
             </v-container>
@@ -45,8 +46,8 @@
                         <v-card>
                             <v-card-title>Register & Log In:</v-card-title>
                             <v-card-text>
-                                First step in your journey to entertainment guidance is registering and logging in,
-                                this helps us make it simpler for you to find each other and what you want. Once you
+                                First step in your journey to entertainment guidance is registering and logging in
+                                this helps make it simpler for you to find each other and partner up on our application. Once you
                                 have logged in a range of new tabs will be available for you to use and get the most
                                 out of our services.
                             </v-card-text>
@@ -56,11 +57,11 @@
                         <v-card>
                             <v-card-title>Find your partner:</v-card-title>
                             <v-card-text>
-                                Once you have logged in the first step is going to be finding your partner you want
-                                to find entertainment matches with. Click on the newly visible partner up tab on the
+                                Once you have logged in the next step is going to be finding the partner you want
+                                to get entertainment matches along side. Click on the newly visible partner up tab on the
                                 navigation bar and find your partner using their log in email. You will be given a 
-                                prompt to check if that is who you are looking for and once you find your partner the 
-                                fun starts.
+                                prompt to check if that is who you are searching for and once you confirm the user that is 
+                                when the fun starts.
                             </v-card-text>
                         </v-card>
                     </v-col>
@@ -68,11 +69,11 @@
                         <v-card>
                             <v-card-title>Choices & Recommendation:</v-card-title>
                             <v-card-text>
-                                With everything else done now both users have to simply go on Movies or TV Shows tabs
-                                depending on what they want to find to watch. Whenever they are free, they can look
-                                through to like and dislike any entertainment to their own tastes and opinions in 
+                                With everything else completed now both users have to simply go on 'Movies' or 'TV Shows' tabs
+                                depending on what type of entertainment they want to watch. Users can look
+                                through options to like and dislike any entertainment to their own prefrences in 
                                 their own times. Any matching options picked between the two will show up under the
-                                Recommendations tab and get stored there ready for users to enjoy and relax to.
+                                'Recommendation' tab and be displayed there ready for users to enjoy and relax to whenever they want.
                             </v-card-text>
                         </v-card>
                     </v-col>

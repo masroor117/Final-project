@@ -60,7 +60,7 @@
         <v-row>
             <!-- Credits the database used for the entertainment being shown -->
             <v-col class="text-center white--text"
-            >Powered by <a href="https://www.themoviedb.org/">The Movie Database</a>
+            >Data from <a href="https://www.themoviedb.org/">The Movie Database</a>
             </v-col>
         </v-row>
     </v-container>

@@ -66,29 +66,29 @@
                         {
                             question: 'Is my information being sold/used externally?',
                             answer: 'The web application does not export any user data to external sources and only uses it in to improve \n' +
-                                    'user experience and achieve targeted outcomes such as helping users find entertainment together.\n' +
-                                    'If ever the data is to be used for other purposes it will first notify users and request permissions.'
+                                    'user experience to achieve targeted outcomes such as helping users find entertainment together.\n' +
+                                    'If the data is ever to be used for other purposes it will first notify users and request permissions first.'
                         },
                         {
                             question: 'How are the entertainment options arranged?',
-                            answer: 'Currently the options are lined up for each by popularity and are adjusted as such. The Movie Database \n'+
-                                    'is used to do so and regularly updates options depending on current popularity and trends.'
+                            answer: 'Currently the options are presented in both TV shows and movies by popularity of each title curently. The Movie Database \n'+
+                                    'is used to do so and regularly has automatic updates depending on current popularity and trends for options.'
                         },
                         {
                             question: 'Will I lose my current recommended if another is matched?', 
-                            answer: 'Recommendation tab currently can hold numerous matches and however many the user decides to like, so please feel free \n'+
-                                    'to like or dislike as you please without any concerns.'
+                            answer: 'Recommendation tab currently can hold an infinite number of matches currently so please feel free \n'+
+                                    'to like or dislike as you please without any concerns of losing your options.'
                         },
                         {
-                            question: 'There is only an Introduction page and Register/Log In?', 
+                            question: 'There is only an Introduction and Register/Log In page available?', 
                             answer: 'To help ensure a smooth and functional service, users who are not signed in will not be granted access to other tabs.'
                         },
                         {
                             question: 'Is the our final launch product?',
-                            answer: 'This is an early version of our launch product being used as a beta to get feedback and improve accordingly'
+                            answer: 'This is an early version of our launch product still in early access to get feedback and improve accordingly in all departments.'
                         },
                         {
-                            question: 'Issues you are unable to solve.',
+                            question: 'For any other issues that require assistance:',
                             answer: 'Please use any of the social media links at the introduction page or email: mqure002@gold.ac.uk to contact us to resolve it.'
                         },
                     ]
@@ -98,10 +98,10 @@
                     faq: [
                         {
                             question: 'Are there apps on stores for IOS, Android or Windows store?',
-                            answer: 'Unfortunately, due to a small team and early in development here are no personalized apps on any operating system.\n' +
+                            answer: 'Unfortunately, due to a small team and it being early in development there are no personalized apps on any operating system.\n' +
                                     'There are however plans to develop and release applications on each platform simultaneously to prevent any users\n' +
-                                    'being unable to use with partners on other systems which is why it was released as a web application first. Currently\n' +
-                                    'the following shortcuts are the best methods to simplify usage for our service on smart phones.'
+                                    'being unable to use the service with partners on other systems which is why it was released as a web application first. \n' +
+                                    'Currently the following shortcuts underneath are the best methods to simplify usage for our service on smart phones.'
                         },
                         {
                             question: 'IOS shortcut set up',
@@ -126,10 +126,10 @@
                                     'A range of updates are still being worked on and developed such as minor upgrades that allow multiple users grouping\n' +
                                     'and filters in entertainment options per streaming service. Major updates are also scheduled to be implemented regarding\n' +
                                     'recommendation algorithms for users along with personalized applications for each operating system such as IOS and\n' +
-                                    'android apps.'
+                                    'android apps coming at a later date.'
                         },
                         {
-                            question: 'How to contact regarding suggestions and feedback?',
+                            question: 'Contact regarding suggestions and feedback?',
                             answer: 'Contacting us on any of the social media pages linked at the landing page is the best method, any feedback and suggestions\n' +
                                     'is greatly appreciated. In the event user has no social media applications any inquiries and feedback can be emailed to the \n' +
                                     'following email: mqure002@gold.ac.uk'

@@ -14,7 +14,6 @@ const routes = [
     path: '/home',
     name: 'home',
      component: () => import(/* webpackChunkName: "Login" */ '../views/index.vue'),
-    // Added to any route to have the guard function called for authentication access only.
   },
   {
     path: '/Movies',
