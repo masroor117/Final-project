@@ -82,27 +82,29 @@
             rules: {
                 // Email checks rule for validity using atleast an @ sign in the entry
                 email: (v) =>
-                    !!(v || "").match(/@/) || "Email is invalid, Please try again",
+                    !!(v || "").match(/@/) || "Email is invalid, please try again",
                 // Password size checks rule for minimum length
                 length: (len) => (v) =>
                     (v || "").length >= len ||
-                    "Enter a password of atleast ${len} length, Please try again",
+                    "Enter a password of atleast eight characters, please try again",
                 //Pasword complexity checks rule for using a common regex for passwords
                 password: (v) =>
                     !!(v || "").match(
                         /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/
                     ) ||
-                    "Password requires a lowercase, uppercase, number and special character, Please try again",
+                    "Password requires a lowercase, uppercase, number and a special character. Please try again",
                 // Required field check rule for any fields that can not be left blank.
                 required: (v) => !!v || "This field is required",
             },
         }),
         methods: {
             // async is due to authentication being set on await
-            async emailAndPasswordRegister() {
+            async emailAndPasswordRegister() 
+            {
                 this.isLoading = true;
-                try {
-                    // lowercase to prevent any inconvenience with case sensitivity
+                try 
+                {
+                    // lowercase to prevent any inconvenience with case sensitivity into firebase
                     let authentication = await firebase
                         .auth()
                         .createUserWithEmailAndPassword(
@@ -114,7 +116,7 @@
                         .collection("users")
                         .doc(authentication.user.uid)
                         .set({name: this.name, email: this.email.toLowerCase()});
-                    // Picks data to store in document users above, excluding password for security concerns
+                    // Picks data to store in document users above which allows calls to data without firebase refrences, excluding password for security concerns
                     this.$store.dispatch("user/setuData", {
                         id: authentication.user.uid,
                         name: this.name,

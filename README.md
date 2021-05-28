@@ -1,4 +1,4 @@
-# entertainment-chief
+# Entertainment-Chief
 
 ## Project setup
 ```
@@ -15,16 +15,14 @@ npm run serve
 npm run build
 ```
 
-### OR Download folder and open using code editor
+Network: http://entertainmentchief.ddns.net/
+-Hosted on Digital Ocean.
 
-### Run code below to update and install all dependanacies 
 
-npm i
+Weekly Progress Log: https://mqure002.tumblr.com/
+-Hosted on Tumblr
 
-### Run the project on the device 
 
-npm run serve
+All required files are included in repository.
 
-#### Use network link provided to view application
-
-Network: 
+We hope you enjoy.

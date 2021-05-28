@@ -93,12 +93,12 @@
                         const uData = userCollect.data();
                         this.$store.dispatch('user/setuData',
                             {
-                                //Stores data in simplfied fields for cleaner code
+                                //Stores data in vuex store for use on functionality
                                 id: userCollect.id,
                                 name: uData.name,
                                 email: uData.email,
                                 partnerId: uData.partnerId || '',
-                                movieApiPage: uData.movueApiPage || 1
+                                movieApiPage: uData.movieApiPage || 1
                             });
                         // Redirects the user to the Movies page after a sucessful registration
                         this.$router.replace({name: "home"});

@@ -112,7 +112,7 @@
                 this.message = "";
                 this.foundUser = null;
 
-                const snapshot = await db
+                const dataSnippet = await db
                 // refrences the user collection for data entries
                     .collection("users")
                     // searches for matching emails without case sensitivity
@@ -120,9 +120,9 @@
                     // open ended retrieval to be specified per request where it is being used
                     .get();
                 // in the event of a successful email match
-                if (!snapshot.empty) {
-                    const userId = snapshot.docs[0].id;
-                    const uData = snapshot.docs[0].data();
+                if (!dataSnippet.empty) {
+                    const userId = dataSnippet.docs[0].id;
+                    const uData = dataSnippet.docs[0].data();
 
                     //spread operator to pass all relevant data
                     this.foundUser = {

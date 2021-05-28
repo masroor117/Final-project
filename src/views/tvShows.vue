@@ -125,12 +125,12 @@
                     if (this.partnerId) {
                         //Checks if same movie has been liked by partner
                         let partnerRef = db.collection("users").doc(this.partnerId);
-                        const partnerLikedSnapshot = await partnerRef.collection("likedMovies")
+                        const partnerLikeddataSnippet = await partnerRef.collection("likedMovies")
                             .where("id", "==", this.currentMovie.id)
                             .get();
 
                         //Stores the movie selection in match collection if both have liked it.
-                        if (!partnerLikedSnapshot.empty) {
+                        if (!partnerLikeddataSnippet.empty) {
                             await userRef.collection("Recommendation").add({...this.currentMovie});
                             await partnerRef.collection("Recommendation").add({...this.currentMovie});
                         }

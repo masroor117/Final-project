@@ -88,7 +88,7 @@
         },
         methods:
             {
-                //intializes method to arruire movie from database
+                //intializes method to acquire movie from database
                 async requestEntertainment(page) {
                     const res = await axios.get(
                         `https://api.themoviedb.org/3/discover/movie?api_key=6800472317f51741b9b808a5af9ee6a1&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=${page}`
@@ -128,12 +128,12 @@
                     if (this.partnerId) {
                         //Checks if same movie has been liked by partner
                         let partnerRef = db.collection("users").doc(this.partnerId);
-                        const partnerLikedSnapshot = await partnerRef.collection("likedMovies")
+                        const partnerLikeddataSnippet = await partnerRef.collection("likedMovies")
                             .where("id", "==", this.currentMovie.id)
                             .get();
 
                         //Stores the movie selection in match collection if both have liked it.
-                        if (!partnerLikedSnapshot.empty) {
+                        if (!partnerLikeddataSnippet.empty) {
                             await userRef.collection("Recommendation").add({...this.currentMovie});
                             await partnerRef.collection("Recommendation").add({...this.currentMovie});
                         }

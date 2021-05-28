@@ -17,7 +17,7 @@
                     </template>
                     <v-card-text class="pa-3">
                         <v-row>
-                            <!-- Layout set up to display movies info and images to fit perfevtly-->
+                            <!-- Layout set up to display movies info and images to fit perfectly-->
                             <v-col sm="5" cols="12" class="black pa-0">
                                 <v-avatar tile :height="$vuetify.breakpoint.xs?'250px':'320px'" width="100%">
                                     <v-img :src="posterImage(match.poster_path)" height="100%" width="100%"

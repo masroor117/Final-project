@@ -4,7 +4,7 @@ import { db } from "../../main";
 // prevents naming conflicts with other modules
 const namespaced = true;
 
-// State management for all the different fields
+// Default state management for all the varying fields
 const state = 
 {
   id: '',
@@ -32,7 +32,6 @@ const mutations =
       state.name = '';
       state.email = '';
       state.partnerId = '';
-      state.movieApiPage = '';
     },
     Partner_Data: (state, payload) => 
     {
